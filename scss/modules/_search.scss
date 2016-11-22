@@ -1,0 +1,44 @@
+// =============================================================================
+// social-media
+// =============================================================================
+
+.search{}
+
+// Sub Classes
+
+
+
+// States
+
+
+
+// =============================================================================
+// Children (that are not separate modules)
+// =============================================================================
+
+.search_input{
+	background-color:black;
+	@include border-left-radius($border-radius-small);
+	border:1px solid lighten($color-alt1, 10%);
+	padding:4px 1em;
+	color:#fff;
+	font-size:ms(-1);
+	float:left;
+}
+
+.search_button{
+	background-color:darken($color-subtle, 50%);
+	@include sassy-button("glass",  $border-radius-small, ms(0), darken($color-subtle, 20%), darken($color-subtle, 30%), $color-alt1, "none");
+	@include border-left-radius(0);
+	text-decoration:none;
+	display:block;
+	padding: 0 .5em;
+	float:left;
+}
+
+
+// Children Sub classes
+
+
+// Children States
+

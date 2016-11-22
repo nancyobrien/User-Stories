@@ -1,0 +1,75 @@
+// MODULE SYNTAX
+// module: 		.module-name
+// child: 		.module-name_child
+// sub class: 	.module-name--subclass
+// state: 		.module-name--is-state
+
+// =============================================================================
+// Module
+// =============================================================================
+
+.form{}
+
+// Sub Classes
+
+
+
+// States
+
+
+
+// =============================================================================
+// Children (that are not separate modules)
+// =============================================================================
+
+.form_input{
+	width:100%;
+	border:1px solid lighten($color-alt1, 70%);
+	@include border-radius(3px);
+	padding:1em;
+	margin:.25em;
+}
+.form_dd{
+	border:1px solid lighten($color-alt1, 70%);
+	@include border-radius(3px);
+	padding:.5em;
+	margin:.25em;
+	
+}
+.form_dd--short{
+	width:100%;
+	
+}
+.form_button{
+	@include sassy-button("simple", $border-radius, ms(0),  lighten($color-alt2, 10%), darken($color-alt2, 10%));
+	color:white !important;
+	margin:.5em;
+
+	text-decoration:none;
+
+}
+.form_intro-text{
+	margin-top:1em;
+	font-size: ms(1);
+	padding:1em;
+}
+// Children Sub classes
+
+.form_input--textarea{
+	height:10em;
+}
+
+// Children States
+
+.module_child--is-something{}
+
+// =============================================================================
+// Positioning Visiting Modules
+// =============================================================================
+
+// position "visiting modules", i.e. modules contained within
+// this module that have their own module definition
+// only position and dimension rules should be contained here
+
+.module > .visiting-module{} 
+.module_child > .visiting-module{}

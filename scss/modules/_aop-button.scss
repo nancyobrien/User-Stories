@@ -1,0 +1,83 @@
+// MODULE SYNTAX
+// module: 		.module-name
+// child: 		.module-name_child
+// sub class: 	.module-name--subclass
+// state: 		.module-name--is-state
+
+// =============================================================================
+// Module
+// =============================================================================
+
+.aop-button{
+	position:relative;
+	@include box-shadow(rgba(0,0,0,.1) 0 2px 3px);
+	margin-bottom:1em;
+	@include isolate-grid(12,12);
+	@include at-breakpoint($breakpoint-small 12) {
+		@include isolate-grid(6,12);
+		
+	}
+	@include at-breakpoint($breakpoint-medium 12) {		
+	}
+	@include border-radius($border-radius);
+		background-color:white;
+	@include transition(background-color 0.25s ease );
+	&:hover{
+		background-color:$color-alt2;
+		.aop-button_text{
+			background-color:rgba($color-alt2,.8);
+		}
+	}
+	padding-top:.5em;
+}
+
+
+// Sub Classes
+
+
+
+// States
+
+
+// =============================================================================
+// Children (that are not separate modules)
+// =============================================================================
+
+.aop-button_image{
+	@include border-radius($border-radius-small);
+	
+}
+.aop-button_text{
+	position:absolute;
+	bottom:.5em;
+	font-size:12px;
+	padding:.25em .5em;
+	left:0;
+	color:#fff;
+	width:100%;
+	@include border-bottom-radius($border-radius-small);
+	
+	background-color:rgba(0,0,0,0.5);
+	
+	@include transition(background-color 0.25s ease );
+	@include at-breakpoint($breakpoint-small 12) {
+		font-size:14px;
+		bottom:1.5em;
+		padding:.5em 1em;
+		width:auto;
+		@include border-bottom-radius(0);
+		
+	}
+	@include at-breakpoint($breakpoint-medium 12) {
+		font-size:20px;
+		
+	}
+}
+
+// Children Sub classes
+
+
+// Children States
+
+
+ 

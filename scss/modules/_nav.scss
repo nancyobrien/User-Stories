@@ -1,0 +1,199 @@
+// =============================================================================
+// nav
+// =============================================================================
+
+.nav{
+	margin:0;
+	padding:0;
+	display:none;
+	position:absolute;
+	z-index:990;
+	top: 75px;
+	width:100%;
+	margin-left:-16px;
+	background-color:$color-alt1;
+	@include at-breakpoint($breakpoint-small 12){
+		top:0;
+		background-color:transparent;
+		display:block !important;
+		position:relative;
+		margin-left:0px;
+	
+	}
+	@include at-breakpoint($breakpoint-medium 12){
+		
+	}
+}
+
+// Sub Classes
+
+.nav--footer{
+	float:left;
+	& > .nav_item > a{
+		font-size:ms(-1);
+		color:lighten($color-alt1, 20%);
+		background-color:transparent;
+		padding:.25em 1em;
+
+		&:hover{
+			background-color:white;
+		}
+	}
+
+}
+
+// States
+
+
+
+// =============================================================================
+// Children (that are not separate modules)
+// =============================================================================
+
+.nav_item{
+	display:inline;
+	& > a{
+		color:#fff;
+		text-decoration:none;
+		display:inline-block;
+		padding:.5em 1.25em;
+		border:1px solid transparent;
+
+		@include border-radius($border-radius-small);
+		&:hover{
+			background-color:black;
+		border:1px solid lighten($color-alt1, 8%);
+		}
+	}
+	
+}
+.nav_item--selected{
+	& > a, & > a:hover{
+		background-color:lighten($color-alt1, 8%);
+	}
+}
+
+// Children Sub classes
+
+
+/*// Children States
+.nav{
+	top:20px;
+	font-size: .833em;
+	@include at-breakpoint($breakpoint-small 12){top:10px;}
+	@include at-breakpoint($breakpoint-medium 12){top:0;}
+}
+.nav * {
+	-webkit-tap-highlight-color:transparent !important;
+}
+.nav--home{
+	
+}
+.nav_menu{
+	display:none;
+	position:absolute;
+	z-index:990;
+	top: 75px;
+	width:100%;
+	@include at-breakpoint($breakpoint-small 12){
+		display:block !important;
+		position:relative;
+		float:right;
+		width:auto;
+		top:20px;
+		height:54px;
+		line-height:54px;
+		margin-right:4em;
+	}
+	@include at-breakpoint($breakpoint-medium 12){
+		top:0;
+		margin-top: 0;
+		margin-right:3em;
+	}
+}
+*/.nav_item{
+	display:block;
+	border-top:1px solid lighten($color-alt1,10%);
+	background-color:lighten($color-alt1,5%);
+	@include at-breakpoint($breakpoint-small 12){
+		background-color:transparent;
+		display:inline-block;
+		border-top-width:0px;
+	}
+	& > a{
+		display:block;
+		@include at-breakpoint($breakpoint-small 12){
+			display:inline-block;
+			//text-align:left;
+		}
+		@include at-breakpoint($breakpoint-medium 12){
+
+		}
+		&:hover, &:active{
+
+		}
+	}
+	&:first-child{
+		padding-top:15px;
+		@include at-breakpoint($breakpoint-small 12){
+			padding-top:0;
+		}
+	}
+	&:last-child{
+		padding-bottom:15px;
+		@include at-breakpoint($breakpoint-small 12){
+			padding-bottom:0;
+		}
+	}
+
+}
+/*
+.nav_item--is-selected{
+	& > a{
+		color:$color-alt2;
+		@include transition(color 0.25s ease );
+		&:hover, &:active{
+			color:$color-alt2;
+		}
+	}
+}
+
+*/
+.nav_button {
+	@include transition(background-color 0.5s ease );
+	margin-top:0;
+	display:block;
+	position:absolute;
+	padding:24px;
+	right:16px;
+	margin-right:-16px;
+	margin-top:-8px;
+	//height:54px;
+	cursor:pointer;
+	@include at-breakpoint($breakpoint-small 12){
+		display:none;
+	}
+	span{
+		display:block;
+		margin:5px 0px 5px 0px;
+		height:3px;
+		background:#fff;
+		width:25px;
+	}
+}
+	/*.icon--close{
+		display:none;
+		font-size:1.5em;
+		margin-top:7px;
+		margin-left:2px;
+		color:$color-primary;
+	}
+}*/
+.nav_button--is-open{
+	background-color:lighten($color-alt1,5%);
+	@include transition(background-color 0.5s ease );
+	
+}
+
+
+

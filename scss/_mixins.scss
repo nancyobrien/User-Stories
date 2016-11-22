@@ -1,0 +1,91 @@
+@mixin tab-radius($radius) {
+	-webkit-border-top-right-radius: $radius;
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-radius-topright: $radius;
+	-moz-border-radius-bottomright: $radius;
+	-ms-border-radius-topright: $radius;
+	-ms-border-radius-bottomright: $radius;
+	border-top-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+}
+
+@mixin box-shadow($offsetX, $offsetY:false) {
+	@if $offsetY {
+	  -webkit-box-shadow: $offsetX, $offsetY;
+	     -moz-box-shadow: $offsetX, $offsetY;
+	      -ms-box-shadow: $offsetX, $offsetY;
+	          box-shadow: $offsetX, $offsetY;
+	} @else {
+	  -webkit-box-shadow: $offsetX;
+	     -moz-box-shadow: $offsetX;
+	      -ms-box-shadow: $offsetX;
+	          box-shadow: $offsetX;
+	}
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+@mixin back-grad($location, $color1, $color2, $color3: false, $midStop: 50%) {
+	@if $color3 {
+		background: -webkit-linear-gradient($location, $color1 0%, $color2 $midStop, $color3 100%);
+		background: -moz-linear-gradient($location, $color1 0%, $color2 $midStop, $color3 100%);
+		background: -o-linear-gradient($location, $color1 0%, $color2 $midStop, $color3 100%);
+		background: -ms-linear-gradient($location, $color1 0%, $color2 $midStop, $color3 100%);
+		background: linear-gradient($location, $color1 0%, $color2 $midStop, $color3 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color3',GradientType=0 );
+	} @else {
+		background: -webkit-linear-gradient($location, $color1 0%, $color2 100%);
+		background: -moz-linear-gradient($location, $color1 0%, $color2 100%);
+		background: -o-linear-gradient($location, $color1 0%, $color2 100%);
+		background: -ms-linear-gradient($location, $color1 0%, $color2 100%);
+		background: linear-gradient($location, $color1 0%, $color2 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 );
+	}
+}
+
+@mixin Opacity($opacity) {
+	$IEValue: $opacity*100;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+	filter: alpha(opacity=$IEValue);
+	opacity: $opacity;
+}
+
+@mixin rectangle($width, $height:$width) {
+	width: $width;
+	height: $height;
+}
+@mixin position($top, $left:$top) {
+	top: $top;
+	left: $left;
+}
+
+@mixin rotate($degs) {
+	-webkit-transform: rotate($degs);
+	-moz-transform: rotate($degs);
+	-o-transform: rotate($degs);
+	-ms-transform: rotate($degs);
+	transform: rotate($degs);
+}
+
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	-moz-transform: $transform;
+	-o-transform: $transform;
+	-ms-transform: $transform;
+	transform: $transform;
+}
+
+%noselect {
+	-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+
+
+%textselect {
+	-moz-user-select: text; -webkit-user-select: text; -ms-user-select:text; user-select:text;-o-user-select:text;
+}

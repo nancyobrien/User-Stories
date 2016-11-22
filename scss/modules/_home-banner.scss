@@ -1,0 +1,113 @@
+// =============================================================================
+// home-banner
+// =============================================================================
+
+.home-banner{
+	height:15em;
+	position:relative;
+	background: #74101A url(/images/home-banner.jpg) center top no-repeat;
+	background-size: 700px 246px;
+	
+	@include at-breakpoint($breakpoint-small 12) {
+		height:20em;
+		background-size: 938px 328px;
+		
+		
+	}
+	@include at-breakpoint($breakpoint-medium 12) {		
+		height:30em;
+		background-size: 1400px 492px;
+
+	}
+
+}
+
+// Sub Classes
+
+
+
+// States
+
+
+
+// =============================================================================
+// Children (that are not separate modules)
+// =============================================================================
+
+.home-banner_title{
+	font-size:2em;
+	font-family:$heading-font-family;
+	color:#fff;
+	position:absolute;
+	@include rem-fallback(top, 4);
+	@include rem-fallback(left, 1);
+	letter-spacing:-1px;
+	@include at-breakpoint($breakpoint-small 12) {
+		@include rem-fallback(top, 8);
+		@include rem-fallback(left, 2);
+		font-size:3em;		
+	}
+	@include at-breakpoint($breakpoint-medium 12) {		
+		@include rem-fallback(top, 10);
+		font-size:4em;	
+	}
+}
+.home-banner_button{
+	@include sassy-button("simple", $border-radius, ms(1),  lighten($color-alt2, 10%), darken($color-alt2, 10%));
+	padding: .5em 1em;
+	font-size:ms(-1);
+	font-family:$heading-font-family;
+	text-decoration:none;
+	@include box-shadow(rgba(0,0,0,.2) 0  5px  5px);
+	position:absolute;
+	@include rem-fallback(top, 7);
+	@include rem-fallback(left, 1);
+	& > .icon{
+		margin-left:1em;
+	}
+	@include at-breakpoint($breakpoint-small 12) {
+		@include rem-fallback(top, 12);
+		font-size: ms(0);
+		padding: .75em 1.5em;	
+		@include rem-fallback(left, 2);
+	}
+	@include at-breakpoint($breakpoint-medium 12) {		
+		@include rem-fallback(top, 14);
+		font-size:ms(1);
+		padding: 1em 2em;	
+	}
+
+}
+.home-banner_contact{
+	display:none;
+	position:absolute;
+	top:0;
+	right:10px;
+	text-align:center;
+	@include at-breakpoint($breakpoint-small 12) {
+		display:block;
+	}
+
+}
+.home-banner_phone-num{
+	color:#ffffff;
+	margin-top:1em;
+	text-align:center;
+
+}
+.home-banner_request-button{
+	width: 150px;
+	height:100px;
+	margin-left:3px;
+	text-align:center;
+	a {
+		text-decoration:none;
+	}
+
+}
+
+// Children Sub classes
+
+
+// Children States
+

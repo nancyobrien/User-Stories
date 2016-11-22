@@ -1,0 +1,147 @@
+$total-columns:12;
+$column-width: 5em;
+$gutter-width:1em;
+$grid-padding:$gutter-width;
+$break1:9;
+$break2:12;
+
+$breakpoint-small: 42em;
+$breakpoint-medium: 60em;
+* {
+	box-sizing:border-box;
+}
+body{
+	overflow: hidden;
+}
+.l-header, .l-content, .l-footer, .l-home-banner, .l-sub-banner{
+	max-width:1400px;
+	position:relative;
+	@include container();
+}
+
+.l-header{
+	position:relative;
+	padding:0;
+	height:5em;
+		@include container();
+
+	@include at-breakpoint($breakpoint-small 12) {
+		height:10em;
+  		
+  	}
+	@include at-breakpoint($breakpoint-medium 12) {
+  		height:7em;
+		
+  	}
+
+
+}
+.l-intro{
+	height:1px;
+}
+
+.l-search{
+	display:none;
+	text-align:center;
+	@include at-breakpoint($breakpoint-small 12) {
+		width:auto;
+		position:absolute;
+		top: 3.5em;
+		right: 2em;
+	}
+	@include at-breakpoint($breakpoint-medium 12) {
+		top: 1em;
+	}
+	
+}
+.l-header_logo{
+	width:auto;
+	position:absolute;
+	@include at-breakpoint($breakpoint-small 12) {
+		top: .5em;
+		left: 1em;
+	}
+	@include at-breakpoint($breakpoint-medium 12) {
+		top: 1.5em;
+		left: 2em;
+	}
+}
+.l-nav{
+	text-align:center;
+	
+  	width:100%;
+  	background-color:rgba(0,0,0,0.2);
+  	bottom:0;
+  	padding:.5em 0;
+	@include at-breakpoint($breakpoint-small 12) {	
+		display:block;
+		position:absolute;
+	}
+	@include at-breakpoint($breakpoint-medium 12) {
+		background-color:transparent;
+		text-align:right;
+		width:auto;
+  		position:absolute;
+		top: 3.3em;
+		right: 1em;
+  	}
+
+}
+.l-content{
+	position:relative;
+	background-color:$color-alt3;
+	padding-top:1em;
+	padding-bottom:2em;
+	@include border-bottom-radius($border-radius);
+}
+.l-sub-banner{
+
+}
+.l-sub-nav, .l-contact-text{
+	@include at-breakpoint($breakpoint-small 12){
+		@include span-columns(4, 12);
+	}
+	@include at-breakpoint($breakpoint-medium 12){
+		@include span-columns(3, 12);
+	}
+}
+.l-subnav-content, .l-contact-form{
+	margin-bottom:2em;
+	@include at-breakpoint($breakpoint-small 12){
+		@include span-columns(7 , 12, 1em);
+
+	}
+	@include at-breakpoint($breakpoint-medium 12){
+		@include span-columns(8 , 12, 1em);
+	}
+}
+.l-social-media{
+	position:absolute;
+	top:1em;
+	right:1em;
+}
+.l-footer{
+
+	& > .footer_copyright{
+		
+	}
+}
+.l-home-intro{
+	position:relative;
+	top:-4em;
+	@include at-breakpoint($breakpoint-small 12) {	
+		@include span-columns(6,12);
+		
+	}
+	
+}
+.l-home-aop{
+	@include at-breakpoint($breakpoint-small 12) {	
+		@include span-columns(6,12);
+		@include omega();
+
+	}
+}
+.l-footer-nav{
+	margin:0 auto;
+}

@@ -1,0 +1,97 @@
+// =============================================================================
+// home-banner
+// =============================================================================
+
+.home-aop{
+}
+// Sub Classes
+
+
+
+// States
+
+
+
+// =============================================================================
+// Children (that are not separate modules)
+// =============================================================================
+
+.home-aop_title{
+	text-transform:uppercase;
+	color:lighten($color-alt1, 50%);
+	font-family:$heading-font-family;
+	padding:1em;
+	margin-top:-3em;
+	@include at-breakpoint($breakpoint-small 12) {
+		margin-top:0;
+	}
+}
+
+.home-aop_item{
+	
+	a{
+		@include sassy-button("simple", $border-radius, ms(0),  lighten($color-alt3, 10%), darken($color-alt3, 10%), $color-alt1);
+		text-decoration:none;
+		font-family:$heading-font-family;
+
+		width:100%;
+		text-align:center;
+		margin-bottom:.5em;
+		width:90%;
+		margin-left:1em;
+		color:$color-alt1 !important;
+		text-decoration:none;	
+		font-size:ms(-1);
+		line-height:4em;
+		@include at-breakpoint(425px 12) {
+			
+			float:left;
+			width:45%;
+		}
+		@include at-breakpoint($breakpoint-small 12) {
+			display:inline-block;
+			width:90%;
+		}
+		@include at-breakpoint(800px 12) {
+			display:inline-block;
+			float:left;
+			width:45%;
+		}
+		@include at-breakpoint($breakpoint-medium 12){
+			letter-spacing:-1px;
+			font-size:ms(0);
+			line-height:4em;
+		}
+	}
+
+
+	
+}
+
+// Children Sub classes
+
+.home-aop_item--wide{
+	a{
+	width:90%;
+	float:none;
+	@include at-breakpoint(425px 12) {
+		float:none;
+			width:92%;
+		}
+		@include at-breakpoint($breakpoint-small 12) {
+			float:none;
+			width:90%;
+		}
+		@include at-breakpoint(800px 12) {
+			float:none;
+			width:93%;
+		}
+		@include at-breakpoint($breakpoint-medium 12){
+			float:none;
+			width:93%;
+		}
+		}
+}
+
+// Children States
+

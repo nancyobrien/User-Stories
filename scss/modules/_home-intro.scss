@@ -1,0 +1,49 @@
+// =============================================================================
+// home-intro
+// =============================================================================
+
+.home-intro{
+	@include border-radius($border-radius-large);
+	background-color:white;
+	padding:1.5em;
+	padding-bottom:3.5em;
+	@include box-shadow(rgba(0,0,0,.1) 0 2px 3px);
+}
+
+// Sub Classes
+
+
+
+// States
+
+
+
+// =============================================================================
+// Children (that are not separate modules)
+// =============================================================================
+
+.home-intro_title{
+	font-size:1.5em;
+	color:$color-primary;
+	font-family:$heading-font-family;
+	letter-spacing: -1px;
+	padding:1em 0 .5em;
+	
+}
+.home-intro_text{
+
+
+}
+.home-intro_button{
+	@include sassy-button("simple", $border-radius-small, ms(-1), $color-subtle, darken($color-subtle, 10%), $color-alt1);
+
+	text-decoration:none;
+	margin-top:1em;
+
+	
+}
+// Children Sub classes
+
+
+// Children States
+

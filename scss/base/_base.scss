@@ -1,0 +1,72 @@
+// =============================================================================
+// Base classes
+// There should be no class names or ID's in this document
+// =============================================================================
+
+
+
+
+
+//This is required for IE in Metro view http://mattstow.com/responsive-design-in-ie10-on-windows-phone-8.html#the-fix
+@-ms-viewport{width: device-width; } 
+
+// Globally set box model to border-box
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+a{
+	@include transition(background-color 0.25s ease );
+	@include transition(border-color 0.25s ease );
+}
+a:hover{
+	text-decoration:none;
+}
+
+table{
+	text-align:left;
+}
+//remove focus rectangle on links
+a:active, a:selected, a:visited, a:focus { 
+    border: none;
+    outline: none;
+}
+html,body{
+	background-color:darken($color-alt3, 5%);
+}
+.rounded{
+	@include border-radius($border-radius);
+}
+.intro-image{
+	@include span-columns(3,12);
+	
+}
+.intro-text{
+	
+	margin-top:1em;
+	font-size: ms(1);
+	padding:1em;
+	line-height:1.4em;
+	padding-right:5em;
+	@include span-columns(9,12);
+	@include omega();
+
+}
+.about-content{
+	
+}
+.button{
+	@include sassy-button("simple", $border-radius, ms(0),  lighten($color-alt2, 10%), darken($color-alt2, 10%));
+	color:#fff !important;
+	&:hover{
+		text-decoration:none !important;
+	}
+	margin:.25em 0;
+	padding: .5em;}
+
+.disclaimer{
+	font-size:0.8em;
+	line-height:1.4em;
+}

@@ -1,0 +1,91 @@
+// MODULE SYNTAX
+// module: 		.module-name
+// child: 		.module-name_child
+// sub class: 	.module-name--subclass
+// state: 		.module-name--is-state
+
+// =============================================================================
+// Module
+// =============================================================================
+
+.provider{
+	@include border-radius($border-radius);
+	background-color:white;
+	font-size:0.9em;
+	line-height:1.5em;
+	@include box-shadow(rgba(0,0,0,.1) 0 2px 3px);
+	@include at-breakpoint($breakpoint-small 12) {
+
+	}
+	@include at-breakpoint($breakpoint-medium 12) {	
+	font-size:ms(0);	
+	}
+	clear:both;
+	margin-bottom:1em;
+	float:left;
+
+
+}
+
+// Sub Classes
+
+// States
+
+
+
+// =============================================================================
+// Children (that are not separate modules)
+// =============================================================================
+
+.provider_image{
+	@include span-columns(4, 12);
+	img{
+		margin:1em;
+	}
+	@include at-breakpoint($breakpoint-small 12) {
+		@include span-columns(3, 12);
+	}
+	@include at-breakpoint($breakpoint-medium 12) {		
+	}
+}
+.provider_name{
+	font-family:$heading-font-family;
+	font-size: ms(1);
+	@include at-breakpoint($breakpoint-small 12) {
+	}
+	@include at-breakpoint($breakpoint-medium 12) {		
+	}
+}
+.provider_bio{
+	padding:2em;
+	padding-right:5em;
+	clear:both;
+	
+	@include at-breakpoint($breakpoint-small 12) {
+		@include span-columns(9, 12);
+		@include omega();
+		clear:none;
+		
+	}
+	@include at-breakpoint($breakpoint-medium 12) {		
+	}
+}
+
+// Children Sub classes
+
+.module_child--somestyle{}
+
+// Children States
+
+.module_child--is-something{}
+
+// =============================================================================
+// Positioning Visiting Modules
+// =============================================================================
+
+// position "visiting modules", i.e. modules contained within
+// this module that have their own module definition
+// only position and dimension rules should be contained here
+
+.module > .visiting-module{} 
+.module_child > .visiting-module{}

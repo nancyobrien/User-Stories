@@ -1,0 +1,64 @@
+// MODULE SYNTAX
+// module: 		.module-name
+// child: 		.module-name_child
+// sub class: 	.module-name--subclass
+// state: 		.module-name--is-state
+
+// =============================================================================
+// Module
+// =============================================================================
+
+.sub-nav{
+	background-color:#fff;
+	@include border-radius($border-radius);
+	float:left;
+	width:100%;
+	padding:1em;
+	margin:1em 0;
+}
+
+// Sub Classes
+
+
+// States
+
+
+
+// =============================================================================
+// Children (that are not separate modules)
+// =============================================================================
+.sub-nav_item{
+	@include sassy-button("simple", $border-radius, ms(0),  lighten($color-alt3, 10%), darken($color-alt3, 10%));
+	color:$text-color;
+	width:100%;
+	margin:.25em 0;
+	text-decoration:none;
+	display:block;
+	padding: .5em ;
+	
+}
+
+// Children Sub classes
+
+
+
+// Children States
+
+.sub-nav_item--selected{
+	@include sassy-button("simple", $border-radius, ms(0),  lighten($color-alt2, 10%), darken($color-alt2, 10%));
+	color:white;
+	margin:.25em 0;
+	padding: .5em;
+	display:block;
+}
+
+// =============================================================================
+// Positioning Visiting Modules
+// =============================================================================
+
+// position "visiting modules", i.e. modules contained within
+// this module that have their own module definition
+// only position and dimension rules should be contained here
+
+.module > .visiting-module{} 
+.module_child > .visiting-module{}

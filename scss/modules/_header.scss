@@ -1,0 +1,47 @@
+// =============================================================================
+// Header
+// =============================================================================
+
+.header{
+	background-color:$color-alt1;
+
+}
+
+// Sub Classes
+
+
+
+// States
+
+
+
+// =============================================================================
+// Children (that are not separate modules)
+// =============================================================================
+
+.header_logo{
+	display:block;
+	@include replace-text("logo.png");
+	width: 206px;
+	height:56px;
+	background-size:206px 56px;
+	margin-top: 10px;
+	@include at-breakpoint($breakpoint-small 12){
+			display:inline-block;
+			margin-top:0;
+			width: 274px;
+			height:74px;
+			background-size:274px 74px;
+		}
+		@include at-breakpoint($breakpoint-medium 12){
+
+		}
+	
+}
+
+// Children Sub classes
+
+
+
+// Children States
+

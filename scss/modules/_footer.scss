@@ -1,0 +1,50 @@
+// =============================================================================
+// Footer
+// =============================================================================
+
+.footer{
+	margin-bottom:2em;
+	padding:1em .5em;
+	@include at-breakpoint($breakpoint-small 12) {
+		text-align:center;
+	}
+	@include at-breakpoint($breakpoint-medium 12) {
+			padding:2em;
+	}
+}
+
+// Sub Classes
+
+
+
+// States
+
+
+
+// =============================================================================
+// Children (that are not separate modules)
+// =============================================================================
+
+.footer_copyright{
+		
+	font-size: ms(-1);
+	text-align:center;
+	display:block;
+	clear:both;
+	@include at-breakpoint($breakpoint-small 12) {
+	
+	}
+	@include at-breakpoint($breakpoint-medium 12) {
+			float:right;
+		clear:none;
+	}
+
+}
+
+// Children Sub classes
+
+
+
+// Children States
+
+

@@ -1,0 +1,86 @@
+.color-palette {
+	display:none;
+	position: absolute;
+	width: 10.5rem;
+	background-color: $white;
+	@include box-shadow(4px 4px 4px 0px rgba(000,000,000,0.5));
+
+	.color-palette-title {
+		//height: 1rem;
+		border-bottom: 1px dotted $black;
+		padding: .25rem .5rem;
+	}
+
+	.color-swatch {
+		width: 3rem;
+		margin: 0.25rem;
+		height: 3rem;
+		float: left;
+		cursor: pointer;
+		border: 1px solid gray;
+		text-align: center;
+
+		&:hover {
+			// @include box-shadow(1px 1px 1px 0px rgba(25,25,25,0.5));
+		}
+
+		&.selected {
+			// @include box-shadow(1px 1px 1px 0px rgba(25,0,0,0.5));
+		}
+	}
+}
+
+//Swatches
+$colorTag1: #58585C;
+$colorTag2: #249CD5;
+$colorTag3: #4ABCCE;
+$colorTag4: #E26F50;
+$colorTag5: #23beb6;
+
+$colorAltTag1: #58585C;
+$colorAltTag2: #249CD5;
+$colorAltTag3: #4ABCCE;
+$colorAltTag4: #E26F50;
+$colorAltTag5: #23beb6;
+
+.palette-02 {
+	.color-swatch-00{
+		background-color: transparent;
+	}
+	.color-swatch-01{
+		background-color: $colorTag1 !important;
+		color: $white !important;
+	}
+	.color-swatch-02{
+		background-color: $colorTag2 !important;
+		color: $white !important;
+	}
+	.color-swatch-03{
+		background-color: $colorTag3 !important;
+		color: $white !important;
+	}
+	.color-swatch-04{
+		background-color: $colorTag4 !important;
+		color: $white !important;
+	}
+	.color-swatch-05{
+		background-color: $colorTag5 !important;
+		color: $white !important;
+	}
+	.color-swatch-06{
+		background-color: $colorAltTag1 !important;
+		color: $white !important;
+	}
+	.color-swatch-07{
+		background-color: $colorAltTag2 !important;
+		color: $white !important;
+	}
+	.color-swatch-08{
+		background-color: $colorAltTag4 !important;
+		color: $white !important;
+	}
+	.color-swatch-09{
+		background-color: $colorAltTag4 !important;
+		color: $white !important;
+	}
+}

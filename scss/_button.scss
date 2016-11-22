@@ -1,0 +1,43 @@
+
+
+
+.button {
+	@extend %noselect;
+	margin: .25rem 0;
+	padding: 1rem 3rem;
+	background-color: $colorButton;
+	font-size:1.1em;
+	color:white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border:2px solid shade($colorButton, 5);
+	cursor: pointer;
+
+	&:hover{
+		color: tint($colorButton, 95);
+		background-color:shade($colorButton, 15);
+		border-color:tint($colorButton, 10);
+	}
+	
+	&:active{
+		color: tint($colorButton, 95);
+		background-color:shade($colorButton, 25);
+		border-color:tint($colorButton, 5);
+	}
+	
+	span {
+		margin-right: .5rem;
+	}
+	
+	&.button--cancel{
+		 background-color: $colorButton2;
+		 border:5px solid tint($colorButton2, 5);  
+		 color: shade(white, 5);
+		 &:hover{
+			color: white;
+			background-color:shade($colorButton2, 5);
+			border:5px solid shade($colorButton2, 2);
+		 } 
+	}
+}

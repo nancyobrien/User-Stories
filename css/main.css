@@ -1,0 +1,2852 @@
+@charset "UTF-8";
+/*! normalize.css 2012-01-31T16:06 UTC - http://github.com/necolas/normalize.css */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 11, ../scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 28, ../scss/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+/* line 40, ../scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+/* line 49, ../scss/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+/* line 65, ../scss/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* 
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+/* line 75, ../scss/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+/* line 87, ../scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+/* line 100, ../scss/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+/* line 109, ../scss/_normalize.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ * Fix IE6/7 heading font-size not being relative to the root font-size
+ */
+/* line 124, ../scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 129, ../scss/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 134, ../scss/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 139, ../scss/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 144, ../scss/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 149, ../scss/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+/* line 158, ../scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+/* line 166, ../scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 171, ../scss/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+/* line 179, ../scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+/* line 187, ../scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+/* line 197, ../scss/_normalize.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+/* line 210, ../scss/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+/* line 223, ../scss/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/* 2 */
+/* line 229, ../scss/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 235, ../scss/_normalize.scss */
+small {
+  font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+/* line 244, ../scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 252, ../scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 256, ../scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/* line 265, ../scss/_normalize.scss */
+ul,
+ol {
+  margin-left: 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 271, ../scss/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 275, ../scss/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+/* line 292, ../scss/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9 
+ */
+/* line 301, ../scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+/* line 314, ../scss/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+/* line 327, ../scss/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding
+ */
+/* line 335, ../scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3 
+ * 3. Corrects alignment displayed oddly in IE6/7
+ */
+/* line 347, ../scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+/* line 360, ../scss/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+/* line 374, ../scss/_normalize.scss */
+button,
+input {
+  line-height: normal;
+  /* 1 */
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+/* line 386, ../scss/_normalize.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+/* line 399, ../scss/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
+ */
+/* line 411, ../scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+/* line 424, ../scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
+/* line 435, ../scss/_normalize.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+/* line 445, ../scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+/* line 456, ../scss/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/* 
+ * Remove most spacing between table cells
+ */
+/* line 470, ../scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 84, ../scss/_mixins.scss */
+.button, .story-card, body.theme-scott .story-card {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+
+/* line 89, ../scss/_mixins.scss */
+.story-card.editing, body.theme-scott .story-card.editing {
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  -o-user-select: text;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?-rq5swa");
+  src: url("fonts/icomoon.eot?#iefix-rq5swa") format("embedded-opentype"), url("fonts/icomoon.woff?-rq5swa") format("woff"), url("fonts/icomoon.ttf?-rq5swa") format("truetype"), url("fonts/icomoon.svg?-rq5swa#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, ../scss/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 26, ../scss/_fonts.scss */
+.icon-paintbrush:before {
+  content: "\e696";
+}
+
+/* line 30, ../scss/_fonts.scss */
+.icon-error:before {
+  content: "\e692";
+}
+
+/* line 34, ../scss/_fonts.scss */
+.icon-cancel3:before {
+  content: "\e693";
+}
+
+/* line 38, ../scss/_fonts.scss */
+.icon-tag2:before {
+  content: "\e68e";
+}
+
+/* line 42, ../scss/_fonts.scss */
+.icon-invert-colors:before {
+  content: "\e694";
+}
+
+/* line 46, ../scss/_fonts.scss */
+.icon-palette:before {
+  content: "\e695";
+}
+
+/* line 50, ../scss/_fonts.scss */
+.icon-type:before {
+  content: "\e600";
+}
+
+/* line 54, ../scss/_fonts.scss */
+.icon-box:before {
+  content: "\e601";
+}
+
+/* line 58, ../scss/_fonts.scss */
+.icon-archive:before {
+  content: "\e602";
+}
+
+/* line 62, ../scss/_fonts.scss */
+.icon-envelope:before {
+  content: "\e603";
+}
+
+/* line 66, ../scss/_fonts.scss */
+.icon-email:before {
+  content: "\e604";
+}
+
+/* line 70, ../scss/_fonts.scss */
+.icon-files:before {
+  content: "\e605";
+}
+
+/* line 74, ../scss/_fonts.scss */
+.icon-uniE606:before {
+  content: "\e606";
+}
+
+/* line 78, ../scss/_fonts.scss */
+.icon-file-settings:before {
+  content: "\e607";
+}
+
+/* line 82, ../scss/_fonts.scss */
+.icon-file-add:before {
+  content: "\e608";
+}
+
+/* line 86, ../scss/_fonts.scss */
+.icon-file:before {
+  content: "\e609";
+}
+
+/* line 90, ../scss/_fonts.scss */
+.icon-align-left:before {
+  content: "\e60a";
+}
+
+/* line 94, ../scss/_fonts.scss */
+.icon-align-right:before {
+  content: "\e60b";
+}
+
+/* line 98, ../scss/_fonts.scss */
+.icon-align-center:before {
+  content: "\e60c";
+}
+
+/* line 102, ../scss/_fonts.scss */
+.icon-align-justify:before {
+  content: "\e60d";
+}
+
+/* line 106, ../scss/_fonts.scss */
+.icon-file-broken:before {
+  content: "\e60e";
+}
+
+/* line 110, ../scss/_fonts.scss */
+.icon-browser:before {
+  content: "\e60f";
+}
+
+/* line 114, ../scss/_fonts.scss */
+.icon-windows:before {
+  content: "\e610";
+}
+
+/* line 118, ../scss/_fonts.scss */
+.icon-window:before {
+  content: "\e611";
+}
+
+/* line 122, ../scss/_fonts.scss */
+.icon-folder:before {
+  content: "\e612";
+}
+
+/* line 126, ../scss/_fonts.scss */
+.icon-folder-add:before {
+  content: "\e613";
+}
+
+/* line 130, ../scss/_fonts.scss */
+.icon-folder-settings:before {
+  content: "\e614";
+}
+
+/* line 134, ../scss/_fonts.scss */
+.icon-folder-check:before {
+  content: "\e615";
+}
+
+/* line 138, ../scss/_fonts.scss */
+.icon-wifi-low:before {
+  content: "\e616";
+}
+
+/* line 142, ../scss/_fonts.scss */
+.icon-wifi-mid:before {
+  content: "\e617";
+}
+
+/* line 146, ../scss/_fonts.scss */
+.icon-wifi-full:before {
+  content: "\e618";
+}
+
+/* line 150, ../scss/_fonts.scss */
+.icon-connection-empty:before {
+  content: "\e619";
+}
+
+/* line 154, ../scss/_fonts.scss */
+.icon-connection-25:before {
+  content: "\e61a";
+}
+
+/* line 158, ../scss/_fonts.scss */
+.icon-connection-50:before {
+  content: "\e61b";
+}
+
+/* line 162, ../scss/_fonts.scss */
+.icon-connection-75:before {
+  content: "\e61c";
+}
+
+/* line 166, ../scss/_fonts.scss */
+.icon-connection-full:before {
+  content: "\e61d";
+}
+
+/* line 170, ../scss/_fonts.scss */
+.icon-list:before {
+  content: "\e61e";
+}
+
+/* line 174, ../scss/_fonts.scss */
+.icon-grid:before {
+  content: "\e61f";
+}
+
+/* line 178, ../scss/_fonts.scss */
+.icon-uniE620:before {
+  content: "\e620";
+}
+
+/* line 182, ../scss/_fonts.scss */
+.icon-battery-charging:before {
+  content: "\e621";
+}
+
+/* line 186, ../scss/_fonts.scss */
+.icon-battery-empty:before {
+  content: "\e622";
+}
+
+/* line 190, ../scss/_fonts.scss */
+.icon-battery-25:before {
+  content: "\e623";
+}
+
+/* line 194, ../scss/_fonts.scss */
+.icon-battery-50:before {
+  content: "\e624";
+}
+
+/* line 198, ../scss/_fonts.scss */
+.icon-battery-75:before {
+  content: "\e625";
+}
+
+/* line 202, ../scss/_fonts.scss */
+.icon-battery-full:before {
+  content: "\e626";
+}
+
+/* line 206, ../scss/_fonts.scss */
+.icon-settings:before {
+  content: "\e627";
+}
+
+/* line 210, ../scss/_fonts.scss */
+.icon-arrow-left:before {
+  content: "\e628";
+}
+
+/* line 214, ../scss/_fonts.scss */
+.icon-arrow-up:before {
+  content: "\e629";
+}
+
+/* line 218, ../scss/_fonts.scss */
+.icon-arrow-down:before {
+  content: "\e62a";
+}
+
+/* line 222, ../scss/_fonts.scss */
+.icon-arrow-right:before {
+  content: "\e62b";
+}
+
+/* line 226, ../scss/_fonts.scss */
+.icon-reload:before {
+  content: "\e62c";
+}
+
+/* line 230, ../scss/_fonts.scss */
+.icon-refresh:before {
+  content: "\e62d";
+}
+
+/* line 234, ../scss/_fonts.scss */
+.icon-volume:before {
+  content: "\e62e";
+}
+
+/* line 238, ../scss/_fonts.scss */
+.icon-volume-increase:before {
+  content: "\e62f";
+}
+
+/* line 242, ../scss/_fonts.scss */
+.icon-volume-decrease:before {
+  content: "\e630";
+}
+
+/* line 246, ../scss/_fonts.scss */
+.icon-mute:before {
+  content: "\e631";
+}
+
+/* line 250, ../scss/_fonts.scss */
+.icon-microphone:before {
+  content: "\e632";
+}
+
+/* line 254, ../scss/_fonts.scss */
+.icon-microphone-off:before {
+  content: "\e633";
+}
+
+/* line 258, ../scss/_fonts.scss */
+.icon-book:before {
+  content: "\e634";
+}
+
+/* line 262, ../scss/_fonts.scss */
+.icon-checkmark:before {
+  content: "\e635";
+}
+
+/* line 266, ../scss/_fonts.scss */
+.icon-checkbox-checked:before {
+  content: "\e636";
+}
+
+/* line 270, ../scss/_fonts.scss */
+.icon-checkbox:before {
+  content: "\e637";
+}
+
+/* line 274, ../scss/_fonts.scss */
+.icon-paperclip:before {
+  content: "\e638";
+}
+
+/* line 278, ../scss/_fonts.scss */
+.icon-download:before {
+  content: "\e639";
+}
+
+/* line 282, ../scss/_fonts.scss */
+.icon-tag:before {
+  content: "\e63a";
+}
+
+/* line 286, ../scss/_fonts.scss */
+.icon-trashcan:before {
+  content: "\e63b";
+}
+
+/* line 290, ../scss/_fonts.scss */
+.icon-search:before {
+  content: "\e63c";
+}
+
+/* line 294, ../scss/_fonts.scss */
+.icon-zoomin:before {
+  content: "\e63d";
+}
+
+/* line 298, ../scss/_fonts.scss */
+.icon-zoomout:before {
+  content: "\e63e";
+}
+
+/* line 302, ../scss/_fonts.scss */
+.icon-chat:before {
+  content: "\e63f";
+}
+
+/* line 306, ../scss/_fonts.scss */
+.icon-chat-1:before {
+  content: "\e640";
+}
+
+/* line 310, ../scss/_fonts.scss */
+.icon-chat-2:before {
+  content: "\e641";
+}
+
+/* line 314, ../scss/_fonts.scss */
+.icon-chat-3:before {
+  content: "\e642";
+}
+
+/* line 318, ../scss/_fonts.scss */
+.icon-comment:before {
+  content: "\e643";
+}
+
+/* line 322, ../scss/_fonts.scss */
+.icon-calendar:before {
+  content: "\e644";
+}
+
+/* line 326, ../scss/_fonts.scss */
+.icon-bookmark:before {
+  content: "\e645";
+}
+
+/* line 330, ../scss/_fonts.scss */
+.icon-email2:before {
+  content: "\e646";
+}
+
+/* line 334, ../scss/_fonts.scss */
+.icon-heart:before {
+  content: "\e647";
+}
+
+/* line 338, ../scss/_fonts.scss */
+.icon-enter:before {
+  content: "\e648";
+}
+
+/* line 342, ../scss/_fonts.scss */
+.icon-cloud:before {
+  content: "\e649";
+}
+
+/* line 346, ../scss/_fonts.scss */
+.icon-book2:before {
+  content: "\e64a";
+}
+
+/* line 350, ../scss/_fonts.scss */
+.icon-star:before {
+  content: "\e64b";
+}
+
+/* line 354, ../scss/_fonts.scss */
+.icon-clock:before {
+  content: "\e64c";
+}
+
+/* line 358, ../scss/_fonts.scss */
+.icon-printer:before {
+  content: "\e64d";
+}
+
+/* line 362, ../scss/_fonts.scss */
+.icon-home:before {
+  content: "\e64e";
+}
+
+/* line 366, ../scss/_fonts.scss */
+.icon-flag:before {
+  content: "\e64f";
+}
+
+/* line 370, ../scss/_fonts.scss */
+.icon-meter:before {
+  content: "\e650";
+}
+
+/* line 374, ../scss/_fonts.scss */
+.icon-switch:before {
+  content: "\e651";
+}
+
+/* line 378, ../scss/_fonts.scss */
+.icon-forbidden:before {
+  content: "\e652";
+}
+
+/* line 382, ../scss/_fonts.scss */
+.icon-lock:before {
+  content: "\e653";
+}
+
+/* line 386, ../scss/_fonts.scss */
+.icon-unlocked:before {
+  content: "\e654";
+}
+
+/* line 390, ../scss/_fonts.scss */
+.icon-unlocked2:before {
+  content: "\e655";
+}
+
+/* line 394, ../scss/_fonts.scss */
+.icon-users:before {
+  content: "\e656";
+}
+
+/* line 398, ../scss/_fonts.scss */
+.icon-user:before {
+  content: "\e657";
+}
+
+/* line 402, ../scss/_fonts.scss */
+.icon-users2:before {
+  content: "\e658";
+}
+
+/* line 406, ../scss/_fonts.scss */
+.icon-user2:before {
+  content: "\e659";
+}
+
+/* line 410, ../scss/_fonts.scss */
+.icon-bullhorn:before {
+  content: "\e65a";
+}
+
+/* line 414, ../scss/_fonts.scss */
+.icon-share:before {
+  content: "\e65b";
+}
+
+/* line 418, ../scss/_fonts.scss */
+.icon-screen:before {
+  content: "\e65c";
+}
+
+/* line 422, ../scss/_fonts.scss */
+.icon-phone:before {
+  content: "\e65d";
+}
+
+/* line 426, ../scss/_fonts.scss */
+.icon-phone-portrait:before {
+  content: "\e65e";
+}
+
+/* line 430, ../scss/_fonts.scss */
+.icon-phone-landscape:before {
+  content: "\e65f";
+}
+
+/* line 434, ../scss/_fonts.scss */
+.icon-tablet:before {
+  content: "\e660";
+}
+
+/* line 438, ../scss/_fonts.scss */
+.icon-tablet-landscape:before {
+  content: "\e661";
+}
+
+/* line 442, ../scss/_fonts.scss */
+.icon-laptop:before {
+  content: "\e662";
+}
+
+/* line 446, ../scss/_fonts.scss */
+.icon-camera:before {
+  content: "\e663";
+}
+
+/* line 450, ../scss/_fonts.scss */
+.icon-microwaveoven:before {
+  content: "\e664";
+}
+
+/* line 454, ../scss/_fonts.scss */
+.icon-creditcards:before {
+  content: "\e665";
+}
+
+/* line 458, ../scss/_fonts.scss */
+.icon-calculator:before {
+  content: "\e666";
+}
+
+/* line 462, ../scss/_fonts.scss */
+.icon-bag:before {
+  content: "\e667";
+}
+
+/* line 466, ../scss/_fonts.scss */
+.icon-diamond:before {
+  content: "\e668";
+}
+
+/* line 470, ../scss/_fonts.scss */
+.icon-drink:before {
+  content: "\e669";
+}
+
+/* line 474, ../scss/_fonts.scss */
+.icon-shorts:before {
+  content: "\e66a";
+}
+
+/* line 478, ../scss/_fonts.scss */
+.icon-vcard:before {
+  content: "\e66b";
+}
+
+/* line 482, ../scss/_fonts.scss */
+.icon-sun:before {
+  content: "\e66c";
+}
+
+/* line 486, ../scss/_fonts.scss */
+.icon-bill:before {
+  content: "\e66d";
+}
+
+/* line 490, ../scss/_fonts.scss */
+.icon-coffee:before {
+  content: "\e66e";
+}
+
+/* line 494, ../scss/_fonts.scss */
+.icon-uniE66F:before {
+  content: "\e66f";
+}
+
+/* line 498, ../scss/_fonts.scss */
+.icon-newspaper:before {
+  content: "\e670";
+}
+
+/* line 502, ../scss/_fonts.scss */
+.icon-stack:before {
+  content: "\e671";
+}
+
+/* line 506, ../scss/_fonts.scss */
+.icon-mapmarker:before {
+  content: "\e672";
+}
+
+/* line 510, ../scss/_fonts.scss */
+.icon-map:before {
+  content: "\e673";
+}
+
+/* line 514, ../scss/_fonts.scss */
+.icon-support:before {
+  content: "\e674";
+}
+
+/* line 518, ../scss/_fonts.scss */
+.icon-uniE675:before {
+  content: "\e675";
+}
+
+/* line 522, ../scss/_fonts.scss */
+.icon-barbell:before {
+  content: "\e676";
+}
+
+/* line 526, ../scss/_fonts.scss */
+.icon-stopwatch:before {
+  content: "\e677";
+}
+
+/* line 530, ../scss/_fonts.scss */
+.icon-atom:before {
+  content: "\e678";
+}
+
+/* line 534, ../scss/_fonts.scss */
+.icon-syringe:before {
+  content: "\e679";
+}
+
+/* line 538, ../scss/_fonts.scss */
+.icon-health:before {
+  content: "\e67a";
+}
+
+/* line 542, ../scss/_fonts.scss */
+.icon-bolt:before {
+  content: "\e67b";
+}
+
+/* line 546, ../scss/_fonts.scss */
+.icon-pill:before {
+  content: "\e67c";
+}
+
+/* line 550, ../scss/_fonts.scss */
+.icon-bones:before {
+  content: "\e67d";
+}
+
+/* line 554, ../scss/_fonts.scss */
+.icon-lab:before {
+  content: "\e67e";
+}
+
+/* line 558, ../scss/_fonts.scss */
+.icon-clipboard:before {
+  content: "\e67f";
+}
+
+/* line 562, ../scss/_fonts.scss */
+.icon-mug:before {
+  content: "\e680";
+}
+
+/* line 566, ../scss/_fonts.scss */
+.icon-bucket:before {
+  content: "\e681";
+}
+
+/* line 570, ../scss/_fonts.scss */
+.icon-select:before {
+  content: "\e682";
+}
+
+/* line 574, ../scss/_fonts.scss */
+.icon-graph:before {
+  content: "\e683";
+}
+
+/* line 578, ../scss/_fonts.scss */
+.icon-crop:before {
+  content: "\e684";
+}
+
+/* line 582, ../scss/_fonts.scss */
+.icon-image:before {
+  content: "\e685";
+}
+
+/* line 586, ../scss/_fonts.scss */
+.icon-cube:before {
+  content: "\e686";
+}
+
+/* line 590, ../scss/_fonts.scss */
+.icon-bars:before {
+  content: "\e687";
+}
+
+/* line 594, ../scss/_fonts.scss */
+.icon-chart:before {
+  content: "\e688";
+}
+
+/* line 598, ../scss/_fonts.scss */
+.icon-pencil:before {
+  content: "\e689";
+}
+
+/* line 602, ../scss/_fonts.scss */
+.icon-measure:before {
+  content: "\e68a";
+}
+
+/* line 606, ../scss/_fonts.scss */
+.icon-eyedropper:before {
+  content: "\e68b";
+}
+
+/* line 610, ../scss/_fonts.scss */
+.icon-cancel:before {
+  content: "\e68f";
+}
+
+/* line 614, ../scss/_fonts.scss */
+.icon-cancel-outline:before {
+  content: "\e690";
+}
+
+/* line 618, ../scss/_fonts.scss */
+.icon-edit:before {
+  content: "\e68c";
+}
+
+/* line 622, ../scss/_fonts.scss */
+.icon-pen:before {
+  content: "\e68d";
+}
+
+/* line 626, ../scss/_fonts.scss */
+.icon-layers:before {
+  content: "\e031";
+}
+
+/* line 630, ../scss/_fonts.scss */
+.icon-stack2:before {
+  content: "\e032";
+}
+
+/* line 634, ../scss/_fonts.scss */
+.icon-stack-2:before {
+  content: "\e033";
+}
+
+/* line 638, ../scss/_fonts.scss */
+.icon-circle-cross:before {
+  content: "\e043";
+}
+
+/* line 642, ../scss/_fonts.scss */
+.icon-square-plus:before {
+  content: "\e044";
+}
+
+/* line 646, ../scss/_fonts.scss */
+.icon-square-cross:before {
+  content: "\e047";
+}
+
+/* line 650, ../scss/_fonts.scss */
+.icon-marquee-plus:before {
+  content: "\e083";
+}
+
+/* line 654, ../scss/_fonts.scss */
+.icon-cross:before {
+  content: "\e117";
+}
+
+/* line 658, ../scss/_fonts.scss */
+.icon-cancel2:before {
+  content: "\e691";
+}
+
+/* line 662, ../scss/_fonts.scss */
+.icon-pencil3:before {
+  content: "\e905";
+}
+
+/* line 666, ../scss/_fonts.scss */
+.icon-pencil2:before {
+  content: "\e906";
+}
+
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=71T1k0kuiiUwHAruvoZyOaNvr5X */
+/* Feel free to copy&paste color codes to your application */
+/* As hex codes */
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* As RGBa codes */
+/* Generated by Paletton.com ├é┬⌐ 2002-2014 */
+/* http://paletton.com */
+/* line 1, ../scss/_default.scss */
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+/* line 8, ../scss/_default.scss */
+body {
+  overflow: hidden;
+  color: #05604E;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  background: #616161;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 25, ../scss/_default.scss */
+a {
+  outline: none;
+  color: #05604E;
+  font-weight: bold;
+}
+/* line 28, ../scss/_default.scss */
+a:focus, a:active {
+  outline: none;
+}
+/* line 33, ../scss/_default.scss */
+a:hover {
+  color: #045142;
+}
+/* line 37, ../scss/_default.scss */
+a img {
+  border: 0;
+}
+
+/* line 42, ../scss/_default.scss */
+.transparent {
+  opacity: 0;
+  height: 0;
+  -moz-transform: translate(0em, -100%);
+  -webkit-transform: translate(0em, -100%);
+  -o-transform: translate(0em, -100%);
+  transform: translate(0em, -100%);
+}
+
+/* line 54, ../scss/_default.scss */
+.show-hide:after {
+  content: "Hide";
+}
+/* line 59, ../scss/_default.scss */
+.show-hide.gradient:after {
+  content: "Use Solid Fill";
+}
+/* line 64, ../scss/_default.scss */
+.show-hide.show:after {
+  content: "Show";
+}
+/* line 68, ../scss/_default.scss */
+.show-hide.show.gradient:after {
+  content: "Use Gradient Fill";
+}
+
+/* line 76, ../scss/_default.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 79, ../scss/_default.scss */
+.processing {
+  cursor: wait !important;
+}
+
+/* line 4, ../scss/_button.scss */
+.button {
+  margin: .25rem 0;
+  padding: 1rem 3rem;
+  background-color: #ffda35;
+  font-size: 1.1em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #f2cf32;
+  cursor: pointer;
+}
+/* line 17, ../scss/_button.scss */
+.button:hover {
+  color: #fffdf4;
+  background-color: #d8b92d;
+  border-color: #ffdd49;
+}
+/* line 23, ../scss/_button.scss */
+.button:active {
+  color: #fffdf4;
+  background-color: #bfa327;
+  border-color: #ffdb3f;
+}
+/* line 29, ../scss/_button.scss */
+.button span {
+  margin-right: .5rem;
+}
+/* line 33, ../scss/_button.scss */
+.button.button--cancel {
+  background-color: #dddddd;
+  border: 5px solid #dedede;
+  color: #f2f2f2;
+}
+/* line 37, ../scss/_button.scss */
+.button.button--cancel:hover {
+  color: white;
+  background-color: #d1d1d1;
+  border: 5px solid #d8d8d8;
+}
+
+/* line 1, ../scss/_swatches.scss */
+.color-palette {
+  display: none;
+  position: absolute;
+  width: 10.5rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(210, 210, 210, 0.5);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(210, 210, 210, 0.5);
+  -ms-box-shadow: 4px 4px 4px 0px rgba(210, 210, 210, 0.5);
+  box-shadow: 4px 4px 4px 0px rgba(210, 210, 210, 0.5);
+}
+/* line 8, ../scss/_swatches.scss */
+.color-palette .color-palette-title {
+  border-bottom: 1px dotted #000000;
+  padding: .25rem .5rem;
+}
+/* line 14, ../scss/_swatches.scss */
+.color-palette .color-swatch {
+  width: 3rem;
+  margin: 0.25rem;
+  height: 3rem;
+  float: left;
+  cursor: pointer;
+  border: 1px solid gray;
+  text-align: center;
+}
+/* line 23, ../scss/_swatches.scss */
+.color-palette .color-swatch:hover {
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(25, 25, 25, 0.5);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(25, 25, 25, 0.5);
+  -ms-box-shadow: 1px 1px 1px 0px rgba(25, 25, 25, 0.5);
+  box-shadow: 1px 1px 1px 0px rgba(25, 25, 25, 0.5);
+}
+/* line 27, ../scss/_swatches.scss */
+.color-palette .color-swatch.selected {
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(25, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(25, 0, 0, 0.5);
+  -ms-box-shadow: 1px 1px 1px 0px rgba(25, 0, 0, 0.5);
+  box-shadow: 1px 1px 1px 0px rgba(25, 0, 0, 0.5);
+}
+
+/* line 36, ../scss/_swatches.scss */
+.palette-01 .color-swatch-00 {
+  background-color: transparent;
+}
+/* line 39, ../scss/_swatches.scss */
+.palette-01 .color-swatch-01 {
+  background-color: #556270 !important;
+  color: #ffffff !important;
+}
+/* line 43, ../scss/_swatches.scss */
+.palette-01 .color-swatch-02 {
+  background-color: #4ECDC4 !important;
+  color: #ffffff !important;
+}
+/* line 47, ../scss/_swatches.scss */
+.palette-01 .color-swatch-03 {
+  background-color: #C7F464 !important;
+  color: #ffffff !important;
+}
+/* line 51, ../scss/_swatches.scss */
+.palette-01 .color-swatch-04 {
+  background-color: #FF6B6B !important;
+  color: #ffffff !important;
+}
+/* line 55, ../scss/_swatches.scss */
+.palette-01 .color-swatch-05 {
+  background-color: #C44D58 !important;
+  color: #ffffff !important;
+}
+/* line 59, ../scss/_swatches.scss */
+.palette-01 .color-swatch-06 {
+  background-color: #FF5E82 !important;
+  color: #ffffff !important;
+}
+/* line 63, ../scss/_swatches.scss */
+.palette-01 .color-swatch-07 {
+  background-color: #5B76A4 !important;
+  color: #ffffff !important;
+}
+/* line 67, ../scss/_swatches.scss */
+.palette-01 .color-swatch-08 {
+  background-color: #E6D86A !important;
+  color: #ffffff !important;
+}
+/* line 71, ../scss/_swatches.scss */
+.palette-01 .color-swatch-09 {
+  background-color: #E6D86A !important;
+  color: #ffffff !important;
+}
+
+/* line 1, ../scss/_storyboard.scss */
+.story-board {
+  font-family: 'Permanent Marker', cursive;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2em;
+}
+
+/* line 12, ../scss/_storyboard.scss */
+.story-board-controls {
+  position: fixed;
+  height: 5rem;
+  top: 5rem;
+  right: 0;
+  z-index: 1500;
+}
+
+/* line 20, ../scss/_storyboard.scss */
+.story-board-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  background-color: #450A65;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1rem;
+  padding: 1em;
+}
+/* line 32, ../scss/_storyboard.scss */
+.story-board-menu #boardName {
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  display: none;
+}
+/* line 39, ../scss/_storyboard.scss */
+.story-board-menu .button-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 44, ../scss/_storyboard.scss */
+.story-board-menu .button-bar .button {
+  background: transparent;
+  border: none;
+  margin: 0;
+  color: #d0c1d8;
+  padding: 1rem .5rem;
+}
+/* line 51, ../scss/_storyboard.scss */
+.story-board-menu .button-bar .button span {
+  margin-right: 0;
+}
+/* line 55, ../scss/_storyboard.scss */
+.story-board-menu .button-bar .button.selected {
+  color: white;
+  background-color: #865f9a;
+}
+/* line 60, ../scss/_storyboard.scss */
+.story-board-menu .button-bar .button:hover {
+  color: #f5f2f7;
+}
+/* line 64, ../scss/_storyboard.scss */
+.story-board-menu .button-bar .button:active {
+  color: white;
+}
+
+/* line 71, ../scss/_storyboard.scss */
+.story-board-content {
+  padding: 3rem;
+  margin-top: 5rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+}
+
+/* line 83, ../scss/_storyboard.scss */
+.story-card {
+  width: 20rem;
+  border: 5px solid #05604E;
+  margin: 0.5rem;
+  position: absolute;
+  z-index: 0;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(20, 20, 20, 0.5);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(20, 20, 20, 0.5);
+  -ms-box-shadow: 4px 4px 4px 0px rgba(20, 20, 20, 0.5);
+  box-shadow: 4px 4px 4px 0px rgba(20, 20, 20, 0.5);
+}
+/* line 93, ../scss/_storyboard.scss */
+.story-card:hover .story-control {
+  visibility: visible;
+}
+/* line 95, ../scss/_storyboard.scss */
+.story-card:hover .story-control.story-cancel-edit, .story-card:hover .story-control.story-accept {
+  visibility: hidden;
+}
+/* line 104, ../scss/_storyboard.scss */
+.story-card.dragging {
+  z-index: 1000;
+  border: 5px solid #067F67;
+  opacity: .5;
+  -webkit-box-shadow: 6px 6px 6px 0px #141414;
+  -moz-box-shadow: 6px 6px 6px 0px #141414;
+  -ms-box-shadow: 6px 6px 6px 0px #141414;
+  box-shadow: 6px 6px 6px 0px #141414;
+}
+/* line 109, ../scss/_storyboard.scss */
+.story-card.dragging .story-control {
+  visibility: hidden;
+}
+/* line 115, ../scss/_storyboard.scss */
+.story-card.deleting .delete-card-container {
+  display: block;
+}
+/* line 121, ../scss/_storyboard.scss */
+.story-card.edit-confirm .edit-card-container {
+  display: block;
+}
+/* line 126, ../scss/_storyboard.scss */
+.story-card.archived {
+  display: none;
+}
+/* line 130, ../scss/_storyboard.scss */
+.story-card .action-card-container {
+  z-index: 2000;
+  background-color: rgba(100, 100, 100, 0.9);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  display: none;
+  height: 100%;
+}
+/* line 141, ../scss/_storyboard.scss */
+.story-card .action-card-container .button {
+  vertical-align: middle;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  border: none;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+/* line 152, ../scss/_storyboard.scss */
+.story-card .action-card-container .button span {
+  margin: 0;
+}
+/* line 154, ../scss/_storyboard.scss */
+.story-card .action-card-container .button:hover {
+  background-color: #000000;
+}
+/* line 160, ../scss/_storyboard.scss */
+.story-card .story-card-handle {
+  background-color: #00372C;
+  width: 100%;
+  display: block;
+  color: #ffffff;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
+  cursor: move;
+}
+/* line 171, ../scss/_storyboard.scss */
+.story-card .story-card-handle .story-tag {
+  height: 2%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 183, ../scss/_storyboard.scss */
+.story-card .story-title {
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1rem;
+  display: inline-block;
+  padding: 0.75rem;
+  width: 100%;
+}
+/* line 191, ../scss/_storyboard.scss */
+.story-card .story-title[contenteditable="true"] {
+  outline: 2px dashed #556270;
+}
+/* line 193, ../scss/_storyboard.scss */
+.story-card .story-title[contenteditable="true"]:hover, .story-card .story-title[contenteditable="true"]:focus {
+  outline: 2px dashed #dddddd;
+}
+/* line 200, ../scss/_storyboard.scss */
+.story-card .story-content {
+  font-size: 1.1rem;
+  font-family: 'Covered By Your Grace', cursive;
+  padding: 0.75rem;
+  padding-right: 2rem;
+  word-wrap: break-word;
+  background: #ffffff;
+  min-height: 4rem;
+}
+/* line 209, ../scss/_storyboard.scss */
+.story-card .story-content[contenteditable="true"] {
+  outline: 2px dashed #dddddd;
+}
+/* line 211, ../scss/_storyboard.scss */
+.story-card .story-content[contenteditable="true"]:hover, .story-card .story-content[contenteditable="true"]:focus {
+  outline: 2px dashed #C7F464;
+}
+/* line 219, ../scss/_storyboard.scss */
+.story-card.editing {
+  z-index: 1000;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(210, 210, 210, 0.5);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(210, 210, 210, 0.5);
+  -ms-box-shadow: 4px 4px 4px 0px rgba(210, 210, 210, 0.5);
+  box-shadow: 4px 4px 4px 0px rgba(210, 210, 210, 0.5);
+}
+/* line 224, ../scss/_storyboard.scss */
+.story-card.editing .story-control.story-edit, .story-card.editing .story-control.story-delete {
+  visibility: hidden;
+}
+/* line 227, ../scss/_storyboard.scss */
+.story-card.editing .story-control.story-cancel-edit, .story-card.editing .story-control.story-accept {
+  visibility: visible;
+}
+/* line 232, ../scss/_storyboard.scss */
+.story-card.editing .story-card-handle {
+  cursor: text;
+}
+/* line 238, ../scss/_storyboard.scss */
+.story-card .story-control {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.5rem;
+  margin: .05rem;
+  opacity: .25;
+}
+/* line 249, ../scss/_storyboard.scss */
+.story-card .story-control:hover {
+  color: black;
+  opacity: 1;
+}
+/* line 256, ../scss/_storyboard.scss */
+.story-card .story-color {
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  opacity: .5;
+  margin: .5rem .25rem;
+}
+/* line 262, ../scss/_storyboard.scss */
+.story-card .story-color:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+/* line 268, ../scss/_storyboard.scss */
+.story-card .story-edit {
+  bottom: 0;
+  right: 0;
+  color: #05604E;
+  visibility: hidden;
+}
+/* line 275, ../scss/_storyboard.scss */
+.story-card .story-cancel-edit {
+  bottom: 0;
+  right: 0;
+  color: #05604E;
+  visibility: hidden;
+}
+/* line 282, ../scss/_storyboard.scss */
+.story-card .story-delete {
+  bottom: 1em;
+  right: 0;
+  color: #05604E;
+  visibility: hidden;
+}
+/* line 289, ../scss/_storyboard.scss */
+.story-card .story-accept {
+  bottom: 1em;
+  right: 0;
+  color: #05604E;
+  visibility: hidden;
+}
+
+/*
+colpick Color Picker / colpick.com
+*/
+/*Main container*/
+/* line 6, ../scss/_colorpick.scss */
+.colpick {
+  position: absolute;
+  width: 346px;
+  height: 170px;
+  overflow: hidden;
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ebebeb;
+  border: 1px solid #bbb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /*Prevents selecting text when dragging the selectors*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/*Color selection box with gradients*/
+/* line 27, ../scss/_colorpick.scss */
+.colpick_color {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  width: 156px;
+  height: 156px;
+  overflow: hidden;
+  outline: 1px solid #aaa;
+  cursor: crosshair;
+}
+
+/* line 37, ../scss/_colorpick.scss */
+.colpick_color_overlay1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 156px;
+  height: 156px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr='#ffffff', endColorstr='#00ffffff')";
+  /* IE8 */
+  background: -moz-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr='#ffffff', endColorstr='#00ffffff');
+  /* IE6 & IE7 */
+}
+
+/* line 52, ../scss/_colorpick.scss */
+.colpick_color_overlay2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 156px;
+  height: 156px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#000000')";
+  /* IE8 */
+  background: -moz-linear-gradient(top, transparent 0%, black 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, black));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, transparent 0%, black 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, transparent 0%, black 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, transparent 0%, black 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+}
+
+/*Circular color selector*/
+/* line 68, ../scss/_colorpick.scss */
+.colpick_selector_outer {
+  background: none;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  margin: -6px 0 0 -6px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/* line 77, ../scss/_colorpick.scss */
+.colpick_selector_inner {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+/*Vertical hue bar*/
+/* line 85, ../scss/_colorpick.scss */
+.colpick_hue {
+  position: absolute;
+  top: 6px;
+  left: 175px;
+  width: 19px;
+  height: 156px;
+  border: 1px solid #aaa;
+  cursor: n-resize;
+}
+
+/*Hue bar sliding indicator*/
+/* line 95, ../scss/_colorpick.scss */
+.colpick_hue_arrs {
+  position: absolute;
+  left: -8px;
+  width: 35px;
+  height: 7px;
+  margin: -7px 0 0 0;
+}
+
+/* line 102, ../scss/_colorpick.scss */
+.colpick_hue_larr {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 7px solid #858585;
+}
+
+/* line 110, ../scss/_colorpick.scss */
+.colpick_hue_rarr {
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 7px solid #858585;
+}
+
+/*New color box*/
+/* line 120, ../scss/_colorpick.scss */
+.colpick_new_color {
+  position: absolute;
+  left: 207px;
+  top: 6px;
+  width: 60px;
+  height: 27px;
+  background: #f00;
+  border: 1px solid #8f8f8f;
+}
+
+/*Current color box*/
+/* line 130, ../scss/_colorpick.scss */
+.colpick_current_color {
+  position: absolute;
+  left: 277px;
+  top: 6px;
+  width: 60px;
+  height: 27px;
+  background: #f00;
+  border: 1px solid #8f8f8f;
+}
+
+/*Input field containers*/
+/* line 140, ../scss/_colorpick.scss */
+.colpick_field, .colpick_hex_field {
+  position: absolute;
+  height: 20px;
+  width: 60px;
+  overflow: hidden;
+  background: #f3f3f3;
+  color: #b8b8b8;
+  font-size: 12px;
+  border: 1px solid #bdbdbd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 153, ../scss/_colorpick.scss */
+.colpick_rgb_r {
+  top: 40px;
+  left: 207px;
+}
+
+/* line 157, ../scss/_colorpick.scss */
+.colpick_rgb_g {
+  top: 67px;
+  left: 207px;
+}
+
+/* line 161, ../scss/_colorpick.scss */
+.colpick_rgb_b {
+  top: 94px;
+  left: 207px;
+}
+
+/* line 165, ../scss/_colorpick.scss */
+.colpick_hsb_h {
+  top: 40px;
+  left: 277px;
+}
+
+/* line 169, ../scss/_colorpick.scss */
+.colpick_hsb_s {
+  top: 67px;
+  left: 277px;
+}
+
+/* line 173, ../scss/_colorpick.scss */
+.colpick_hsb_b {
+  top: 94px;
+  left: 277px;
+}
+
+/* line 177, ../scss/_colorpick.scss */
+.colpick_hex_field {
+  width: 68px;
+  left: 207px;
+  top: 121px;
+}
+
+/*Text field container on focus*/
+/* line 183, ../scss/_colorpick.scss */
+.colpick_focus {
+  border-color: #999;
+}
+
+/*Field label container*/
+/* line 187, ../scss/_colorpick.scss */
+.colpick_field_letter {
+  position: absolute;
+  width: 12px;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 4px;
+  background: #efefef;
+  border-right: 1px solid #bdbdbd;
+  font-weight: bold;
+  color: #777;
+}
+
+/*Text inputs*/
+/* line 199, ../scss/_colorpick.scss */
+.colpick_field input, .colpick_hex_field input {
+  position: absolute;
+  right: 11px;
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  line-height: 20px;
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+  text-align: right;
+  outline: none;
+}
+
+/* line 214, ../scss/_colorpick.scss */
+.colpick_hex_field input {
+  right: 4px;
+}
+
+/*Field up/down arrows*/
+/* line 218, ../scss/_colorpick.scss */
+.colpick_field_arrs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 9px;
+  height: 21px;
+  cursor: n-resize;
+}
+
+/* line 226, ../scss/_colorpick.scss */
+.colpick_field_uarr {
+  position: absolute;
+  top: 5px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #959595;
+}
+
+/* line 235, ../scss/_colorpick.scss */
+.colpick_field_darr {
+  position: absolute;
+  bottom: 5px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #959595;
+}
+
+/*Submit/Select button*/
+/* line 245, ../scss/_colorpick.scss */
+.colpick_submit {
+  position: absolute;
+  left: 207px;
+  top: 149px;
+  width: 130px;
+  height: 22px;
+  line-height: 22px;
+  background: #efefef;
+  text-align: center;
+  color: #555;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #bdbdbd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 262, ../scss/_colorpick.scss */
+.colpick_submit:hover {
+  background: #f3f3f3;
+  border-color: #999;
+  cursor: pointer;
+}
+
+/*full layout with no submit button*/
+/* line 269, ../scss/_colorpick.scss */
+.colpick_full_ns .colpick_submit, .colpick_full_ns .colpick_current_color {
+  display: none;
+}
+
+/* line 272, ../scss/_colorpick.scss */
+.colpick_full_ns .colpick_new_color {
+  width: 130px;
+  height: 25px;
+}
+
+/* line 276, ../scss/_colorpick.scss */
+.colpick_full_ns .colpick_rgb_r, .colpick_full_ns .colpick_hsb_h {
+  top: 42px;
+}
+
+/* line 279, ../scss/_colorpick.scss */
+.colpick_full_ns .colpick_rgb_g, .colpick_full_ns .colpick_hsb_s {
+  top: 73px;
+}
+
+/* line 282, ../scss/_colorpick.scss */
+.colpick_full_ns .colpick_rgb_b, .colpick_full_ns .colpick_hsb_b {
+  top: 104px;
+}
+
+/* line 285, ../scss/_colorpick.scss */
+.colpick_full_ns .colpick_hex_field {
+  top: 135px;
+}
+
+/*rgbhex layout*/
+/* line 290, ../scss/_colorpick.scss */
+.colpick_rgbhex .colpick_hsb_h, .colpick_rgbhex .colpick_hsb_s, .colpick_rgbhex .colpick_hsb_b {
+  display: none;
+}
+
+/* line 293, ../scss/_colorpick.scss */
+.colpick_rgbhex {
+  width: 282px;
+}
+
+/* line 296, ../scss/_colorpick.scss */
+.colpick_rgbhex .colpick_field, .colpick_rgbhex .colpick_submit {
+  width: 68px;
+}
+
+/* line 299, ../scss/_colorpick.scss */
+.colpick_rgbhex .colpick_new_color {
+  width: 34px;
+  border-right: none;
+}
+
+/* line 303, ../scss/_colorpick.scss */
+.colpick_rgbhex .colpick_current_color {
+  width: 34px;
+  left: 240px;
+  border-left: none;
+}
+
+/*rgbhex layout, no submit button*/
+/* line 310, ../scss/_colorpick.scss */
+.colpick_rgbhex_ns .colpick_submit, .colpick_rgbhex_ns .colpick_current_color {
+  display: none;
+}
+
+/* line 313, ../scss/_colorpick.scss */
+.colpick_rgbhex_ns .colpick_new_color {
+  width: 68px;
+  border: 1px solid #8f8f8f;
+}
+
+/* line 317, ../scss/_colorpick.scss */
+.colpick_rgbhex_ns .colpick_rgb_r {
+  top: 42px;
+}
+
+/* line 320, ../scss/_colorpick.scss */
+.colpick_rgbhex_ns .colpick_rgb_g {
+  top: 73px;
+}
+
+/* line 323, ../scss/_colorpick.scss */
+.colpick_rgbhex_ns .colpick_rgb_b {
+  top: 104px;
+}
+
+/* line 326, ../scss/_colorpick.scss */
+.colpick_rgbhex_ns .colpick_hex_field {
+  top: 135px;
+}
+
+/*hex layout*/
+/* line 331, ../scss/_colorpick.scss */
+.colpick_hex .colpick_hsb_h, .colpick_hex .colpick_hsb_s, .colpick_hex .colpick_hsb_b, .colpick_hex .colpick_rgb_r, .colpick_hex .colpick_rgb_g, .colpick_hex .colpick_rgb_b {
+  display: none;
+}
+
+/* line 334, ../scss/_colorpick.scss */
+.colpick_hex {
+  width: 206px;
+  height: 201px;
+}
+
+/* line 338, ../scss/_colorpick.scss */
+.colpick_hex .colpick_hex_field {
+  width: 72px;
+  height: 25px;
+  top: 168px;
+  left: 80px;
+}
+
+/* line 344, ../scss/_colorpick.scss */
+.colpick_hex .colpick_hex_field div, .colpick_hex .colpick_hex_field input {
+  height: 25px;
+  line-height: 25px;
+}
+
+/* line 348, ../scss/_colorpick.scss */
+.colpick_hex .colpick_new_color {
+  left: 9px;
+  top: 168px;
+  width: 30px;
+  border-right: none;
+}
+
+/* line 354, ../scss/_colorpick.scss */
+.colpick_hex .colpick_current_color {
+  left: 39px;
+  top: 168px;
+  width: 30px;
+  border-left: none;
+}
+
+/* line 360, ../scss/_colorpick.scss */
+.colpick_hex .colpick_submit {
+  left: 164px;
+  top: 168px;
+  width: 30px;
+  height: 25px;
+  line-height: 25px;
+}
+
+/*hex layout, no submit button*/
+/* line 369, ../scss/_colorpick.scss */
+.colpick_hex_ns .colpick_submit, .colpick_hex_ns .colpick_current_color {
+  display: none;
+}
+
+/* line 372, ../scss/_colorpick.scss */
+.colpick_hex_ns .colpick_hex_field {
+  width: 80px;
+}
+
+/* line 375, ../scss/_colorpick.scss */
+.colpick_hex_ns .colpick_new_color {
+  width: 60px;
+  border: 1px solid #8f8f8f;
+}
+
+/*Dark color scheme*/
+/* line 381, ../scss/_colorpick.scss */
+.colpick_dark {
+  background: #161616;
+  border-color: #2a2a2a;
+}
+
+/* line 385, ../scss/_colorpick.scss */
+.colpick_dark .colpick_color {
+  outline-color: #333;
+}
+
+/* line 388, ../scss/_colorpick.scss */
+.colpick_dark .colpick_hue {
+  border-color: #555;
+}
+
+/* line 391, ../scss/_colorpick.scss */
+.colpick_dark .colpick_field, .colpick_dark .colpick_hex_field {
+  background: #101010;
+  border-color: #2d2d2d;
+}
+
+/* line 395, ../scss/_colorpick.scss */
+.colpick_dark .colpick_field_letter {
+  background: #131313;
+  border-color: #2d2d2d;
+  color: #696969;
+}
+
+/* line 400, ../scss/_colorpick.scss */
+.colpick_dark .colpick_field input, .colpick_dark .colpick_hex_field input {
+  color: #7a7a7a;
+}
+
+/* line 403, ../scss/_colorpick.scss */
+.colpick_dark .colpick_field_uarr {
+  border-bottom-color: #696969;
+}
+
+/* line 406, ../scss/_colorpick.scss */
+.colpick_dark .colpick_field_darr {
+  border-top-color: #696969;
+}
+
+/* line 409, ../scss/_colorpick.scss */
+.colpick_dark .colpick_focus {
+  border-color: #444;
+}
+
+/* line 412, ../scss/_colorpick.scss */
+.colpick_dark .colpick_submit {
+  background: #131313;
+  border-color: #2d2d2d;
+  color: #7a7a7a;
+}
+
+/* line 417, ../scss/_colorpick.scss */
+.colpick_dark .colpick_submit:hover {
+  background-color: #101010;
+  border-color: #444;
+}
+
+@font-face {
+  font-family: 'robotothin';
+  src: url("fonts/Roboto-Thin-webfont.eot");
+  src: url("fonts/Roboto-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Thin-webfont.woff") format("woff"), url("fonts/Roboto-Thin-webfont.ttf") format("truetype"), url("fonts/Roboto-Thin-webfont.svg#robotothin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotolight';
+  src: url("fonts/Roboto-Light-webfont.eot");
+  src: url("fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Light-webfont.woff") format("woff"), url("fonts/Roboto-Light-webfont.ttf") format("truetype"), url("fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotoregular';
+  src: url("fonts/Roboto-Regular-webfont.eot");
+  src: url("fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Regular-webfont.woff") format("woff"), url("fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotobold';
+  src: url("fonts/Roboto-Bold-webfont.eot");
+  src: url("fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Bold-webfont.woff") format("woff"), url("fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=71T1k0kuiiUwHAruvoZyOaNvr5X */
+/* Feel free to copy&paste color codes to your application */
+/* As hex codes */
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* As RGBa codes */
+/* Generated by Paletton.com ├é┬⌐ 2002-2014 */
+/* http://paletton.com */
+/* line 1, ../scss/theme/scott/_swatches.scss */
+.color-palette {
+  display: none;
+  position: absolute;
+  width: 10.5rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+/* line 8, ../scss/theme/scott/_swatches.scss */
+.color-palette .color-palette-title {
+  border-bottom: 1px dotted #000000;
+  padding: .25rem .5rem;
+}
+/* line 14, ../scss/theme/scott/_swatches.scss */
+.color-palette .color-swatch {
+  width: 3rem;
+  margin: 0.25rem;
+  height: 3rem;
+  float: left;
+  cursor: pointer;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+/* line 47, ../scss/theme/scott/_swatches.scss */
+.palette-02 .color-swatch-00 {
+  background-color: transparent;
+}
+/* line 50, ../scss/theme/scott/_swatches.scss */
+.palette-02 .color-swatch-01 {
+  background-color: #58585C !important;
+  color: #ffffff !important;
+}
+/* line 54, ../scss/theme/scott/_swatches.scss */
+.palette-02 .color-swatch-02 {
+  background-color: #249CD5 !important;
+  color: #ffffff !important;
+}
+/* line 58, ../scss/theme/scott/_swatches.scss */
+.palette-02 .color-swatch-03 {
+  background-color: #4ABCCE !important;
+  color: #ffffff !important;
+}
+/* line 62, ../scss/theme/scott/_swatches.scss */
+.palette-02 .color-swatch-04 {
+  background-color: #E26F50 !important;
+  color: #ffffff !important;
+}
+/* line 66, ../scss/theme/scott/_swatches.scss */
+.palette-02 .color-swatch-05 {
+  background-color: #23beb6 !important;
+  color: #ffffff !important;
+}
+/* line 70, ../scss/theme/scott/_swatches.scss */
+.palette-02 .color-swatch-06 {
+  background-color: #58585C !important;
+  color: #ffffff !important;
+}
+/* line 74, ../scss/theme/scott/_swatches.scss */
+.palette-02 .color-swatch-07 {
+  background-color: #249CD5 !important;
+  color: #ffffff !important;
+}
+/* line 78, ../scss/theme/scott/_swatches.scss */
+.palette-02 .color-swatch-08 {
+  background-color: #E26F50 !important;
+  color: #ffffff !important;
+}
+/* line 82, ../scss/theme/scott/_swatches.scss */
+.palette-02 .color-swatch-09 {
+  background-color: #E26F50 !important;
+  color: #ffffff !important;
+}
+
+/* line 7, ../scss/theme/scott/_scott.scss */
+body.theme-scott {
+  color: #05604E;
+  background: #58585C;
+}
+/* line 11, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-board {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2em;
+  font-family: "robotolight";
+}
+/* line 21, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-board-controls {
+  position: fixed;
+  height: 5rem;
+  top: 5rem;
+  right: 0;
+  z-index: 1500;
+}
+/* line 29, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-board-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  background-color: #249CD5;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1rem;
+  padding: 1em;
+}
+/* line 41, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-board-menu #boardName {
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  display: none;
+}
+/* line 48, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-board-menu .button-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 53, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-board-menu .button-bar .button {
+  background: transparent;
+  border: none;
+  margin: 0;
+  color: #d0c1d8;
+  padding: 1rem .5rem;
+}
+/* line 60, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-board-menu .button-bar .button span {
+  margin-right: 0;
+}
+/* line 64, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-board-menu .button-bar .button.selected {
+  color: white;
+  background-color: #865f9a;
+}
+/* line 69, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-board-menu .button-bar .button:hover {
+  color: #f5f2f7;
+}
+/* line 73, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-board-menu .button-bar .button:active {
+  color: white;
+}
+/* line 80, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-board-content {
+  padding: 3rem;
+  margin-top: 5rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+}
+/* line 92, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card {
+  width: 20rem;
+  border: 4px solid #ffffff;
+  margin: 0.5rem;
+  position: absolute;
+  z-index: 0;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(10, 10, 10, 0.2);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(10, 10, 10, 0.2);
+  -ms-box-shadow: 1px 1px 1px 0px rgba(10, 10, 10, 0.2);
+  box-shadow: 1px 1px 1px 0px rgba(10, 10, 10, 0.2);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 103, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card:hover .story-control {
+  visibility: visible;
+}
+/* line 105, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card:hover .story-control.story-cancel-edit, body.theme-scott .story-card:hover .story-control.story-accept {
+  visibility: hidden;
+}
+/* line 114, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card.dragging {
+  z-index: 1000;
+  border: 4px solid #ffffff;
+  opacity: .5;
+  -webkit-box-shadow: 6px 6px 6px 0px #141414;
+  -moz-box-shadow: 6px 6px 6px 0px #141414;
+  -ms-box-shadow: 6px 6px 6px 0px #141414;
+  box-shadow: 6px 6px 6px 0px #141414;
+}
+/* line 119, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card.dragging .story-control {
+  visibility: hidden;
+}
+/* line 125, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card.deleting .delete-card-container {
+  display: block;
+}
+/* line 131, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card.edit-confirm .edit-card-container {
+  display: block;
+}
+/* line 136, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card.archived {
+  display: none;
+}
+/* line 140, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .action-card-container {
+  z-index: 2000;
+  background-color: rgba(100, 100, 100, 0.9);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  display: none;
+  height: 100%;
+}
+/* line 151, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .action-card-container .button {
+  vertical-align: middle;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  border: none;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+}
+/* line 162, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .action-card-container .button span {
+  margin: 0;
+}
+/* line 164, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .action-card-container .button:hover {
+  background-color: #000000;
+}
+/* line 170, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-card-handle {
+  background-color: #00372C;
+  width: 100%;
+  display: block;
+  color: #ffffff;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
+  cursor: move;
+}
+/* line 181, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-card-handle .story-tag {
+  height: 2%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 193, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-title {
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1rem;
+  display: inline-block;
+  padding: 0.75rem;
+  width: 100%;
+}
+/* line 201, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-title[contenteditable="true"] {
+  outline: 2px dashed #58585C;
+}
+/* line 203, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-title[contenteditable="true"]:hover, body.theme-scott .story-card .story-title[contenteditable="true"]:focus {
+  outline: 2px dashed #dddddd;
+}
+/* line 210, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-content {
+  font-size: 1rem;
+  font-family: "robotolight";
+  padding: 0.75rem;
+  padding-right: 2rem;
+  word-wrap: break-word;
+  background: #ffffff;
+  min-height: 4rem;
+  color: #4d4d4d;
+}
+/* line 220, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-content[contenteditable="true"] {
+  outline: 1px dashed #dddddd;
+}
+/* line 222, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-content[contenteditable="true"]:hover, body.theme-scott .story-card .story-content[contenteditable="true"]:focus {
+  outline: 2px dashed #4ABCCE;
+}
+/* line 230, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card.editing {
+  z-index: 1000;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(210, 210, 210, 0.5);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(210, 210, 210, 0.5);
+  -ms-box-shadow: 4px 4px 4px 0px rgba(210, 210, 210, 0.5);
+  box-shadow: 4px 4px 4px 0px rgba(210, 210, 210, 0.5);
+}
+/* line 235, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card.editing .story-control.story-edit, body.theme-scott .story-card.editing .story-control.story-delete {
+  visibility: hidden;
+}
+/* line 238, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card.editing .story-control.story-cancel-edit, body.theme-scott .story-card.editing .story-control.story-accept {
+  visibility: visible;
+}
+/* line 243, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card.editing .story-card-handle {
+  cursor: text;
+}
+/* line 249, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-control {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.5rem;
+  margin: .05rem;
+  opacity: .25;
+}
+/* line 260, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-control:hover {
+  color: black;
+  opacity: 1;
+}
+/* line 267, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-color {
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  opacity: .5;
+  margin: .5rem .25rem;
+}
+/* line 273, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-color:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+/* line 279, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-edit {
+  bottom: 0;
+  right: 0;
+  color: #05604E;
+  visibility: hidden;
+}
+/* line 286, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-cancel-edit {
+  bottom: 0;
+  right: 0;
+  color: #05604E;
+  visibility: hidden;
+}
+/* line 293, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-delete {
+  bottom: 1em;
+  right: 0;
+  color: #05604E;
+  visibility: hidden;
+}
+/* line 300, ../scss/theme/scott/_scott.scss */
+body.theme-scott .story-card .story-accept {
+  bottom: 1em;
+  right: 0;
+  color: #05604E;
+  visibility: hidden;
+}

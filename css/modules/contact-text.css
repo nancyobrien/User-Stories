@@ -1,0 +1,76 @@
+/*
+Error: Undefined mixin 'box-shadow'.
+        on line 13 of C:/Users/Nancy/Desktop/Dbox/UserStories/scss/modules/contact-text.scss, in `box-shadow'
+        from line 13 of C:/Users/Nancy/Desktop/Dbox/UserStories/scss/modules/contact-text.scss
+
+8: // Module
+9: // =============================================================================
+10: 
+11: .contact-text{
+12: 	background-color:#fff;
+13: 	@include box-shadow(rgba(0,0,0,.1) 0 2px 3px);
+14: 	@include border-radius($border-radius);
+15: 	float:left;
+16: 	width:100%;
+17: 	padding:1em;
+18: 	margin:1em 0;
+
+Backtrace:
+C:/Users/Nancy/Desktop/Dbox/UserStories/scss/modules/contact-text.scss:13:in `box-shadow'
+C:/Users/Nancy/Desktop/Dbox/UserStories/scss/modules/contact-text.scss:13
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:332:in `block in visit_mixin'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:330:in `visit_mixin'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:414:in `block (2 levels) in visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:414:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:414:in `block in visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:412:in `visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:151:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/engine.rb:268:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/sass_compiler.rb:40:in `compile!'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/update_project.rb:49:in `perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.1/bin/compass:30:in `block in <top (required)>'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.1/bin/compass:44:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-1.0.1/bin/compass:44:in `<top (required)>'
+C:/Ruby193/bin/compass:23:in `load'
+C:/Ruby193/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'box-shadow'.\A         on line 13 of C:/Users/Nancy/Desktop/Dbox/UserStories/scss/modules/contact-text.scss, in `box-shadow'\A         from line 13 of C:/Users/Nancy/Desktop/Dbox/UserStories/scss/modules/contact-text.scss\A \A 8: // Module\A 9: // =============================================================================\A 10: \A 11: .contact-text{\A 12: 	background-color:#fff;\A 13: 	@include box-shadow(rgba(0,0,0,.1) 0 2px 3px);\A 14: 	@include border-radius($border-radius);\A 15: 	float:left;\A 16: 	width:100%;\A 17: 	padding:1em;\A 18: 	margin:1em 0;"; }

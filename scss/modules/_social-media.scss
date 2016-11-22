@@ -1,0 +1,40 @@
+// =============================================================================
+// social-media
+// =============================================================================
+
+.social-media{
+	display:none;
+}
+
+// Sub Classes
+
+
+
+// States
+
+
+
+// =============================================================================
+// Children (that are not separate modules)
+// =============================================================================
+
+.social-media_button{
+
+	&:hover{
+
+	}
+	
+}
+
+
+// Children Sub classes
+.social-media_button--twitter{
+	
+}
+
+.social-media_button--facebook{
+	
+}
+
+// Children States
+

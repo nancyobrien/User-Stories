@@ -1,0 +1,295 @@
+.story-board {
+	font-family: 'Permanent Marker', cursive;
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	padding: 2em;
+
+}
+
+.story-board-controls{
+	position: fixed;
+	height: $menuHeight;
+	top: $menuHeight;
+	right:0;
+	z-index: 1500;
+}
+
+.story-board-menu {
+	position: fixed;
+	top: 0;
+	left:0;
+	right:0;
+	height: $menuHeight;
+	background-color: $colorMenuBackground;
+	color: $colorMenuText;
+	font-size: 2rem;
+	line-height: 1rem;
+	padding: 1em;
+
+	#boardName {
+		font-size: 1rem;
+		color: $white;
+		text-decoration: none;
+		display:none;
+	}
+
+	.button-bar {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		.button {
+			background: transparent;
+			border: none;
+			margin: 0;
+			color: tint($colorMenuBackground, 75);
+			padding: 1rem .5rem;
+
+			span {
+				margin-right: 0;
+			}
+
+			&.selected {
+				color: tint($colorMenuBackground, 100);
+				background-color: tint($colorMenuBackground, 35);
+			}
+
+			&:hover{
+				color: tint($colorMenuBackground, 95);
+			}
+
+			&:active{
+				color: tint($colorMenuBackground, 100);
+			}
+		}
+	}
+}
+
+.story-board-content {
+	padding: $boardPadding;
+	margin-top: $menuHeight;
+	width: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	overflow: auto;
+}
+
+.story-card {
+	@extend %noselect;
+	width: $cardWidth;
+	border: 5px solid $colorCardBorder;
+	margin: $cardMargin;
+	position: absolute;
+	z-index: 0;
+	@include box-shadow(4px 4px 4px 0px rgba(20,20,20,0.5));
+
+	&:hover {
+		.story-control {
+			visibility: visible;
+			&.story-cancel-edit, &.story-accept{
+				visibility: hidden;
+			}
+		}
+
+	}
+
+
+
+	&.dragging {
+		z-index: 1000;
+		border: 5px solid $colorCardBorderDrag;
+		opacity: .5;
+		@include box-shadow(6px 6px 6px 0px rgba(20,20,20,1));
+		.story-control {
+			visibility: hidden;
+		}
+	}
+
+	&.deleting {
+		.delete-card-container{
+			display: block;
+		}
+	}
+
+	&.edit-confirm {
+		.edit-card-container{
+			display: block;
+		}
+	}
+
+	&.archived {
+		display: none;
+	}
+
+	.action-card-container{
+		z-index: 2000;
+		background-color: rgba(100, 100, 100, 0.9);
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		text-align: center;
+		display: none;
+		height: 100%;
+		.button {
+			vertical-align: middle;
+			width: auto;
+			background-color: rgba(0, 0, 0, 0.5);
+			padding: .5rem 1rem;
+			font-size: 2rem;
+			border: none;
+			position: relative;
+			top: 50%;
+			@include transform(translateY(-50%));
+			@include border-radius(.4rem);
+			span {margin: 0;}
+
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+
+	.story-card-handle {
+		//height: $cardHandleHeight;
+		background-color: $colorCardHandleBackground;
+		width: 100%;
+		display: block;
+		color: $colorCardTitle;
+		padding-top: 2%;
+		padding-bottom: 1.5%;
+
+		cursor: move;
+
+		.story-tag {
+			height: 2%;
+			width: 100%;
+			display: block;
+			position: absolute;
+			top:0;
+			left: 0;
+		}
+	}
+
+
+
+	.story-title {
+		color: $colorCardTitle;
+		font-size: 1.25rem;
+		line-height: 1rem;
+		display: inline-block;
+		padding:  $cardPadding;
+		width: 100%;
+
+		&[contenteditable="true"] {
+			outline: 2px dashed $colorTag1;
+			&:hover, &:focus {
+				outline: 2px dashed $gray;
+			}
+		}
+	}
+
+
+	.story-content {
+		font-size: 1.1rem;
+		font-family: 'Covered By Your Grace', cursive;
+		padding: $cardPadding;
+		padding-right: 2rem;
+		word-wrap: break-word;
+		background:$colorCardContentBackground;
+		min-height: 4rem;
+
+		&[contenteditable="true"] {
+			outline: 2px dashed $gray;
+			&:hover, &:focus {
+				outline: 2px dashed $colorTag3;
+			}
+		}
+
+	}
+
+
+	&.editing {
+		@extend %textselect;
+
+		z-index: 1000;
+		.story-control {
+			&.story-edit, &.story-delete {
+				visibility: hidden;
+			}
+			&.story-cancel-edit, &.story-accept {
+				visibility: visible;
+			}
+
+		}
+		.story-card-handle {
+			cursor: text;
+		}
+		@include box-shadow(4px 4px 4px 0px rgba(210,210,210,0.5));
+	}
+
+	.story-control {
+		position: absolute;
+
+		display: block;
+		text-decoration: none;
+		color: $colorCardControl ;
+		font-size: 1.5rem;
+		margin: .05rem;
+		opacity: .25;
+
+
+		&:hover{
+			color: shade($colorCardControl, 15);
+			opacity: 1;
+		}
+	}
+
+
+	.story-color {
+		top: 0;
+		right: 0;
+		color: $colorCardColorControl;
+		opacity: .5;
+		margin: .5rem .25rem;
+		&:hover{
+			color: $colorCardColorControl;
+			opacity: 1;
+		}
+	}
+
+	.story-edit {
+		bottom: 0;
+		right: 0;
+		color: $colorCardEditControl ;
+		visibility: hidden;
+	}
+
+	.story-cancel-edit{
+		bottom: 0;
+		right: 0;
+		color: $colorCardEditControl ;
+		visibility: hidden;
+	}
+
+	.story-delete {
+		bottom: 1em;
+		right: 0;
+		color: $colorCardEditControl ;
+		visibility: hidden;
+	}
+
+	.story-accept {
+		bottom: 1em;
+		right: 0;
+		color: $colorCardEditControl ;
+		visibility: hidden;
+	}
+}

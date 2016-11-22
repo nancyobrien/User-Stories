@@ -1,0 +1,81 @@
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+body {
+    overflow: hidden;
+    color:$color-secondary-1-0;
+    font-weight:normal;
+    font-size:16px;
+    padding:0;
+    margin:0;
+    background:$colorBackground;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+
+a {
+	outline: none;
+	color:$colorText;
+	&:focus, &:active{
+		outline: none;
+	}
+	font-weight:bold;
+
+	&:hover {
+		color: shade($colorText, 15);
+	}
+
+	img {
+		border:0;
+	}
+}
+
+.transparent {
+    opacity:0;
+    height:0;
+    -moz-transform:translate(0em,-100%);
+    -webkit-transform:translate(0em,-100%);
+    -o-transform:translate(0em,-100%);
+    transform:translate(0em,-100%);
+}
+
+
+
+.show-hide {
+	&:after {
+		content: "Hide";
+
+	}
+	&.gradient {
+		&:after {
+			content: "Use Solid Fill";
+		}
+	}
+	&.show {
+		&:after {
+			content: "Show";
+		}
+		&.gradient {
+			&:after {
+				content: "Use Gradient Fill";
+			}
+		}
+	}
+}
+
+
+.hide {
+	display:none !important;
+}
+.processing {
+	cursor: wait !important;
+}
