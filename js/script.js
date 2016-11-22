@@ -2,6 +2,7 @@ var dragClass= "dragging"
 var editClass= "editing";
 var validPalettes = ['palette-01', 'palette-02'];
 var maxSwatches = 9;
+var serverGetBoardPoint = "GetBaords.ashx";
 
 var cardManager = false;
 
@@ -56,6 +57,16 @@ $(document).ready(function(e){
 	})*/
 
 })
+
+function getBoards() {
+	var crdMgr = this;
+	if (boardName) {
+		$.get( serverGetBoardPoint, function( data ) {
+			
+		});
+	}
+
+}
 
 function initializeInterface() {
 	if (!cardManager) {setTimeout(initializeInterface, 25 ); return;}
